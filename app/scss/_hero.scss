@@ -1,0 +1,17 @@
+.hero {
+
+    text-align: center;
+    
+    h1 {
+        margin-bottom: 5.4rem;
+
+        @include breakpoint-up(medium){
+            margin-bottom: 10rem;
+        }
+    }
+
+    &__arrow {
+        
+        animation: float 6s ease-in-out infinite;
+    }
+}

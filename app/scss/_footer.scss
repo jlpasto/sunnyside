@@ -1,0 +1,66 @@
+.footer {
+
+    padding-top: 6.2rem;
+    padding-bottom: 7.8rem;
+    text-align: center;
+    background-color: $moderateCyan;
+    color:$darkModerateCyan;
+
+    @include breakpoint-up(large){
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+    }
+
+    a.footer__logo {
+        display: inline-block;
+        scale: 1.2;
+        margin-bottom: 4.2rem;
+        
+    }
+
+    &__links {
+
+        margin-bottom: 8.5rem;
+
+        ul li {
+
+            &:not(:last-child){
+                margin-right: 5.4rem;
+            }
+
+            a {
+                color:$darkModerateCyan;
+                font-size: 1.8rem;
+                transition: all 150ms ease-in-out;
+    
+                &:hover {
+                    color: $white;
+                }
+            }
+        }
+        
+    }
+
+    &__socials {
+
+        ul li {
+
+            &:not(:last-child){
+                margin-right: 2.5rem;
+            }
+
+            a {
+    
+                img {
+                    transition: all 150ms ease-in-out;
+                    
+                    &:hover {
+                        transform: translateY(-0.5rem);
+                    }
+                }
+    
+                
+            }
+        }
+    }
+}

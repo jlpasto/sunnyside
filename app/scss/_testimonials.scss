@@ -1,0 +1,89 @@
+.testimonial {
+
+    text-align: center;
+    padding-top: 6.5rem;
+    padding-bottom: 2rem;
+
+    @include breakpoint-up(large){
+        padding-top: 15.5rem;
+        padding-bottom: calc(15.5rem - 6.5rem);
+    }
+
+    &__title {
+        color: $grayishBlue;
+        font-size: 1.5rem;
+        font-family: $font-heading;
+        letter-spacing: 0.5rem;
+        text-transform: uppercase;
+        font-weight: 900;
+        padding-bottom: 6.5rem;
+
+        @include breakpoint-up(large){
+            font-size: 2rem;
+            padding-bottom: 8rem;
+        }
+    }
+
+    &__grid {
+    
+        padding: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__item {
+        padding: 0 2rem;
+        max-width: 38rem;
+        margin-bottom: 6.5rem;
+    }
+
+    &__image {
+
+        width: 7.5rem;
+        height: 7.5rem;
+        border-radius: 50%;
+        margin-bottom: 3rem;
+
+        @include breakpoint-up(large){
+            margin-bottom: 6rem;
+        }
+    }
+
+    &__feedback {
+        font-size: 1.8rem;
+        line-height: 1.9;
+        color:$veryDarkGrayishBlue;
+        margin-bottom: 3.8rem;
+
+        @include breakpoint-up(large){
+            margin-bottom: 7rem;
+        }
+
+    }
+
+    &__name {
+
+        font-size: 2rem;
+        font-family: $font-heading;
+        color: $veryDarkDesaturatedBlue;
+        font-weight: 800;
+        margin-bottom: 1.2rem;
+
+        @include breakpoint-up(large){
+            font-size: 2.1rem;
+            margin-bottom: 1.4rem;
+        }
+
+    }
+
+    &__jobtitle {
+        font-size: 1.5rem;
+        color: $grayishBlue;
+
+        @include breakpoint-up(large){
+            font-size: 1.7rem;
+            margin-bottom: 1.6rem;
+        }
+    }
+}

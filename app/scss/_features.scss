@@ -1,0 +1,180 @@
+.feature {
+
+    text-align: center;
+    line-height: 1.8;
+    letter-spacing: -0.02rem;
+    
+    @include breakpoint-up(large){
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        letter-spacing: unset;
+        
+    }
+
+    > div {
+
+        @include breakpoint-up(medium){
+            min-height:40rem;
+        }
+
+        @include breakpoint-up(large){
+            width: 50%;
+            height: unset;
+            min-height: 59rem;
+        }
+        
+    }
+
+    &__image {
+
+        min-height: 31rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    
+
+        &--egg {
+
+            background-image: url('/images/mobile/image-transform.jpg');
+
+            @include breakpoint-up(large){
+                order: 2;
+                background-image: url('/images/desktop/image-transform.jpg');
+            }
+        }
+
+        &--vase {
+            background-image: url('/images/mobile/image-stand-out.jpg');
+
+            @include breakpoint-up(large){
+                order: 3;
+                background-image: url('/images/desktop/image-stand-out.jpg');
+            }
+
+        }
+
+        &--grape {
+            position: relative;
+            height: 60rem;
+            background-image: url('/images/mobile/image-graphic-design.jpg');
+            color: $darkDesaturatedCyan;
+
+            @include breakpoint-up(large){
+                order: 5;
+                background-image: url('/images/desktop/image-graphic-design.jpg');
+            }
+
+
+        }
+
+        &--orange {
+            position: relative;
+            height: 60rem;
+            background-image: url('/images/mobile/image-photography.jpg');
+            color: $darkBlue;
+
+            @include breakpoint-up(large){
+                order: 6;
+                background-image: url('/images/desktop/image-photography.jpg');
+            }
+
+        }
+
+        &--content {
+            width: 100%;
+            position: absolute;
+            bottom:0;
+            padding-bottom: 6rem;
+
+            p {
+                @include breakpoint-up(medium){
+                    max-width: 35rem;
+                    margin: 0 auto;
+                }
+
+                @include breakpoint-up(large){
+                    max-width: 37rem;
+                }
+            }
+        }
+    }
+
+    &__text {
+        padding-top: 7rem;
+        padding-bottom: 6rem;
+        min-height: 43rem;
+
+        @include breakpoint-up(large){
+            text-align: left;
+            padding-top: 16rem;
+            padding-bottom:16rem;
+         }
+
+        &--1 {
+            @include breakpoint-up(large){
+               order: 1;
+               padding-right: 11rem;
+               padding-left: 15.5rem;
+            }
+        }
+
+        &--2 {
+            @include breakpoint-up(large){
+                order: 4;
+                padding-right: 15.5rem;
+                padding-left: 11rem;
+             }
+        }
+        p {
+            max-width: 45rem;
+            margin-bottom: 4rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    &__link {
+        
+        font-family: $font-heading;
+        font-size: 1.4rem;
+        font-weight: 900;
+        letter-spacing: 0.1rem;
+        color: $veryDarkDesaturatedBlue;
+        text-transform: uppercase;
+
+        &::before {
+            content: "";
+            display: block;
+            margin: 0 auto;
+            position: relative;
+            top: 2.8rem;
+            width: 13rem;
+            height: 1rem;
+            border-radius: 2rem;
+            opacity: 0.3;
+            z-index: -1;
+            transition: opacity 150ms ease-in-out;
+
+            @include breakpoint-up(large){
+                margin: 0;
+                left: -1rem;
+            }
+      
+        }
+
+        &--1::before{
+            background-color: $yellow;
+        }
+        
+        &--2::before {
+            background-color: $softRed;
+        }
+
+        &:hover.feature__link::before{
+            opacity: 1;
+        }
+    }
+
+
+}
