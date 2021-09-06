@@ -137,5 +137,5 @@ I want to continue focusing on using mobile first approach in designing. I will 
 
 ## Acknowledgments
 
- - Raymart Pamplona provided me feedback on how can I make my website even more better and point out all  my mistakes on my previous work that I applied working on this project. (Link:https://www.frontendmentor.io/solutions/responsive-landing-page-using-flexbox-and-grid-and-utilizing-scss-HgKCUtwQi#comment-61331977856b167e2fa445cd)
+ - Raymart Pamplona provided me [feedback](https://www.frontendmentor.io/solutions/responsive-landing-page-using-flexbox-and-grid-and-utilizing-scss-HgKCUtwQi#comment-61331977856b167e2fa445cd) on how can I make my website even more better and point out all  my mistakes on my previous work that I applied working on this project. 
 
