@@ -20,39 +20,39 @@
         }
 
         &:nth-child(1) {
-            background-image: url("/images/mobile/image-gallery-milkbottles.jpg");
+            background-image: url("/sunnyside/images/mobile/image-gallery-milkbottles.jpg");
 
             
             @include breakpoint-up(large){
-                background-image: url("/images/desktop/image-gallery-milkbottles.jpg");
+                background-image: url("/sunnyside/images/desktop/image-gallery-milkbottles.jpg");
             }
 
         }
 
         &:nth-child(2) {
-            background-image: url("/images/mobile/image-gallery-orange.jpg");
+            background-image: url("/sunnyside/images/mobile/image-gallery-orange.jpg");
 
             
             @include breakpoint-up(large){
-                background-image: url("/images/desktop/image-gallery-orange.jpg");
+                background-image: url("/sunnyside/images/desktop/image-gallery-orange.jpg");
             }
         }
 
         &:nth-child(3) {
-            background-image: url("/images/mobile/image-gallery-cone.jpg");
+            background-image: url("/sunnyside/images/mobile/image-gallery-cone.jpg");
 
             
             @include breakpoint-up(large){
-                background-image: url("/images/desktop/image-gallery-cone.jpg");
+                background-image: url("/sunnyside/images/desktop/image-gallery-cone.jpg");
             }
         }
 
         &:nth-child(4) {
-            background-image: url("/images/mobile/image-gallery-sugar-cubes.jpg");
+            background-image: url("/sunnyside/images/mobile/image-gallery-sugar-cubes.jpg");
 
             
             @include breakpoint-up(large){
-                background-image: url("/images/desktop/image-gallery-sugarcubes.jpg");
+                background-image: url("/sunnyside/images/desktop/image-gallery-sugarcubes.jpg");
             }
         }
 
